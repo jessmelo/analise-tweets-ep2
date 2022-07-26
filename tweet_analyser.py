@@ -6,7 +6,7 @@ from transformers import pipeline
 def import_tweets(file):
     with open(file, encoding="utf_8") as data_file:    
         data = json.load(data_file)
-        return data
+    return data
 
 def get_sentiment_analysis(json_tweets):
     data = import_tweets(json_tweets)
